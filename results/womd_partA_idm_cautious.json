@@ -1,0 +1,164 @@
+{
+  "scenes": 2000,
+  "tau": 1.5,
+  "agent": "idm_cautious",
+  "setup": "sim agent drives non-SDC vehicles; SDC/VRUs log replay",
+  "partA": [
+    {
+      "family": "vru_interaction",
+      "agents": 2796,
+      "pairs_both_finite": 847,
+      "P_real_lt_tau": 0.05257510729613734,
+      "P_sim_lt_tau": 0.05686695278969957,
+      "real_collision_rate": 0.009656652360515022,
+      "sim_collision_rate": 0.10371959942775394,
+      "real_rate_hit_ahead": 0.002145922746781116,
+      "sim_rate_hit_ahead": 0.0690271816881259,
+      "sim_rate_struck_behind_by_log": 0.022532188841201718,
+      "sim_rate_struck_behind_by_sim": 0.012160228898426323,
+      "area_capped10": 0.5029682444701383,
+      "tail_R": 1.0813559322033899,
+      "tail_ci": [
+        0.8838488931409286,
+        1.333295406058882
+      ],
+      "delta": 0.8506622695484447,
+      "delta_ci": [
+        0.7789038795750863,
+        0.9212728585675405
+      ],
+      "omega": 1.272731951301661,
+      "question": "rate of min TTC < 1.5 s among human-driven vehicles",
+      "required": 4,
+      "achieved": 0,
+      "decision": "do not credit"
+    },
+    {
+      "family": "intersection",
+      "agents": 1684,
+      "pairs_both_finite": 346,
+      "P_real_lt_tau": 0.040973871733966744,
+      "P_sim_lt_tau": 0.0332541567695962,
+      "real_collision_rate": 0.00831353919239905,
+      "sim_collision_rate": 0.07007125890736342,
+      "real_rate_hit_ahead": 0.004156769596199525,
+      "sim_rate_hit_ahead": 0.07007125890736342,
+      "sim_rate_struck_behind_by_log": 0.0,
+      "sim_rate_struck_behind_by_sim": 0.0,
+      "area_capped10": 0.21030269135220342,
+      "tail_R": 0.8129496402877697,
+      "tail_ci": [
+        0.5583798882681565,
+        1.176520353982301
+      ],
+      "delta": 0.8284233416859081,
+      "delta_ci": [
+        0.7434751382935298,
+        0.9217520571073926
+      ],
+      "omega": 1.0838645674618455,
+      "question": "rate of min TTC < 1.5 s among human-driven vehicles",
+      "required": 4,
+      "achieved": 0,
+      "decision": "do not credit"
+    },
+    {
+      "family": "lane_change",
+      "agents": 1178,
+      "pairs_both_finite": 210,
+      "P_real_lt_tau": 0.035653650254668934,
+      "P_sim_lt_tau": 0.017826825127334467,
+      "real_collision_rate": 0.0050933786078098476,
+      "sim_collision_rate": 0.0466893039049236,
+      "real_rate_hit_ahead": 0.0,
+      "sim_rate_hit_ahead": 0.017826825127334467,
+      "sim_rate_struck_behind_by_log": 0.023769100169779286,
+      "sim_rate_struck_behind_by_sim": 0.0050933786078098476,
+      "area_capped10": 0.5772940713486383,
+      "tail_R": 0.5058823529411764,
+      "tail_ci": [
+        0.28723682713098897,
+        0.8309859154929579
+      ],
+      "delta": 0.7428569207743407,
+      "delta_ci": [
+        0.6738915899361047,
+        0.8283796006188289
+      ],
+      "omega": 0.8341540768928358,
+      "question": "rate of min TTC < 1.5 s among human-driven vehicles",
+      "required": 4,
+      "achieved": 1,
+      "decision": "do not credit"
+    },
+    {
+      "family": "car_following",
+      "agents": 5688,
+      "pairs_both_finite": 2233,
+      "P_real_lt_tau": 0.049753867791842474,
+      "P_sim_lt_tau": 0.05485232067510549,
+      "real_collision_rate": 0.007383966244725738,
+      "sim_collision_rate": 0.04922644163150492,
+      "real_rate_hit_ahead": 0.006153305203938115,
+      "sim_rate_hit_ahead": 0.03375527426160337,
+      "sim_rate_struck_behind_by_log": 0.007208157524613221,
+      "sim_rate_struck_behind_by_sim": 0.008263009845288327,
+      "area_capped10": 0.7963659987236154,
+      "tail_R": 1.1022927689594357,
+      "tail_ci": [
+        0.9444688186356073,
+        1.2698860015577427
+      ],
+      "delta": 1.0157771404326263,
+      "delta_ci": [
+        0.975723900868706,
+        1.0620441648009777
+      ],
+      "omega": 1.0417767968958729,
+      "question": "rate of min TTC < 1.5 s among human-driven vehicles",
+      "required": 4,
+      "achieved": 0,
+      "decision": "do not credit"
+    },
+    {
+      "family": "other",
+      "agents": 1849,
+      "pairs_both_finite": 0,
+      "P_real_lt_tau": 0.0,
+      "P_sim_lt_tau": 0.0075716603569497025,
+      "real_collision_rate": 0.011357490535424553,
+      "sim_collision_rate": 0.07950243374797188,
+      "real_rate_hit_ahead": 0.0,
+      "sim_rate_hit_ahead": 0.05678745267712277,
+      "sim_rate_struck_behind_by_log": 0.011357490535424553,
+      "sim_rate_struck_behind_by_sim": 0.011357490535424553,
+      "area_capped10": 0.17056882957786038,
+      "tail_R": NaN
+    },
+    {
+      "family": "POOLED",
+      "agents": 13195,
+      "pairs_both_finite": 3636,
+      "P_real_lt_tau": 0.041000378931413416,
+      "P_sim_lt_tau": 0.04259189086775294,
+      "real_collision_rate": 0.008336491095111784,
+      "sim_collision_rate": 0.06744979158772262,
+      "real_rate_hit_ahead": 0.0036377415687760513,
+      "sim_rate_hit_ahead": 0.04766957180750284,
+      "sim_rate_struck_behind_by_log": 0.011595301250473665,
+      "sim_rate_struck_behind_by_sim": 0.008184918529746116,
+      "area_capped10": 0.500665926877727,
+      "tail_R": 1.038781163434903,
+      "tail_ci": [
+        0.9281120227542858,
+        1.1752655232913554
+      ],
+      "delta": 0.9388088572757819,
+      "delta_ci": [
+        0.9060409759175228,
+        0.9732021256076977
+      ],
+      "omega": 1.0980183817276967
+    }
+  ]
+}

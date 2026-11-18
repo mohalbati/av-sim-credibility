@@ -1,0 +1,223 @@
+{
+  "tau": 1.5,
+  "context_of_use": {
+    "question": "conflict rate (min TTC < 1.5 s) for release gating",
+    "influence": "medium",
+    "consequence": "high"
+  },
+  "partA": [
+    {
+      "family": "car_following",
+      "scenes": 3000,
+      "true_delta": 1.05,
+      "true_omega": 0.15,
+      "delta": 1.054,
+      "omega": 0.15,
+      "area_s": 0.291,
+      "tail_R": 0.886,
+      "tail_R_ci": [
+        0.584,
+        1.356
+      ],
+      "required": 4,
+      "achieved": 4,
+      "decision": "credit"
+    },
+    {
+      "family": "lane_change",
+      "scenes": 1500,
+      "true_delta": 1.3,
+      "true_omega": 0.35,
+      "delta": 1.295,
+      "omega": 0.343,
+      "area_s": 1.357,
+      "tail_R": 0.714,
+      "tail_R_ci": [
+        0.562,
+        0.895
+      ],
+      "required": 4,
+      "achieved": 2,
+      "decision": "do not credit"
+    },
+    {
+      "family": "intersection",
+      "scenes": 1200,
+      "true_delta": 1.0,
+      "true_omega": 0.5,
+      "delta": 0.985,
+      "omega": 0.505,
+      "area_s": 0.87,
+      "tail_R": 1.768,
+      "tail_R_ci": [
+        1.396,
+        2.215
+      ],
+      "required": 4,
+      "achieved": 2,
+      "decision": "do not credit"
+    },
+    {
+      "family": "vru_interaction",
+      "scenes": 600,
+      "true_delta": 1.6,
+      "true_omega": 0.6,
+      "delta": 1.596,
+      "omega": 0.606,
+      "area_s": 2.927,
+      "tail_R": 0.961,
+      "tail_R_ci": [
+        0.682,
+        1.402
+      ],
+      "required": 4,
+      "achieved": 1,
+      "decision": "do not credit"
+    }
+  ],
+  "pooled": {
+    "family": "POOLED (all scenes)",
+    "delta": 1.137,
+    "omega": 0.379,
+    "area_s": 0.853,
+    "tail_R": 1.069
+  },
+  "partB": [
+    {
+      "family": "car_following",
+      "k_road": 2,
+      "road_only": {
+        "mean": 0.05,
+        "median": 0.04351460191095526,
+        "lo": 0.00831211613486663,
+        "hi": 0.12832501994030027
+      },
+      "a_level": 0.6,
+      "credit_level": 600.0,
+      "post_level": {
+        "mean": 0.035796145164090985,
+        "median": 0.03528465130422525,
+        "lo": 0.02275823605818045,
+        "hi": 0.05173922600692557
+      },
+      "a_omega": 0.8,
+      "credit_omega": 800.0,
+      "post_omega": {
+        "mean": 0.03551763820652414,
+        "median": 0.03512626043426947,
+        "lo": 0.023996287658752207,
+        "hi": 0.04926221312570084
+      },
+      "a_empirical": 1.0,
+      "credit_empirical": 1000.0,
+      "post_empirical": {
+        "mean": 0.035345229137554196,
+        "median": 0.03502828072191062,
+        "lo": 0.024900723137466836,
+        "hi": 0.04759030697646493
+      }
+    },
+    {
+      "family": "lane_change",
+      "k_road": 12,
+      "road_only": {
+        "mean": 0.25,
+        "median": 0.24336586697884294,
+        "lo": 0.13119720024937792,
+        "hi": 0.406464691202752
+      },
+      "a_level": 0.15,
+      "credit_level": 150.0,
+      "post_level": {
+        "mean": 0.21936274509803924,
+        "median": 0.21769834839103158,
+        "lo": 0.1593094595051541,
+        "hi": 0.2888719108354482
+      },
+      "a_omega": 0.433,
+      "credit_omega": 433.4,
+      "post_omega": {
+        "mean": 0.21337536503407428,
+        "median": 0.21268623632437686,
+        "lo": 0.17419106363101342,
+        "hi": 0.256475446445139
+      },
+      "a_empirical": 1.0,
+      "credit_empirical": 1000.0,
+      "post_empirical": {
+        "mean": 0.21109554933084348,
+        "median": 0.2107781740277479,
+        "lo": 0.18421801343980282,
+        "hi": 0.2397765998976172
+      }
+    },
+    {
+      "family": "intersection",
+      "k_road": 8,
+      "road_only": {
+        "mean": 0.17,
+        "median": 0.16338182377392468,
+        "lo": 0.0756418644957757,
+        "hi": 0.3019100912163982
+      },
+      "a_level": 0.15,
+      "credit_level": 150.0,
+      "post_level": {
+        "mean": 0.1690554298642534,
+        "median": 0.16739171591423868,
+        "lo": 0.11694468937221521,
+        "hi": 0.23061734433603728
+      },
+      "a_omega": 0.261,
+      "credit_omega": 260.9,
+      "post_omega": {
+        "mean": 0.16894315062724588,
+        "median": 0.16787204279365603,
+        "lo": 0.12636972083735162,
+        "hi": 0.2176021221137013
+      },
+      "a_empirical": 1.0,
+      "credit_empirical": 1000.0,
+      "post_empirical": {
+        "mean": 0.16880054585936938,
+        "median": 0.16848319190148758,
+        "lo": 0.14486371780236082,
+        "hi": 0.1945407414252147
+      }
+    },
+    {
+      "family": "vru_interaction",
+      "k_road": 7,
+      "road_only": {
+        "mean": 0.15,
+        "median": 0.14338859510956645,
+        "lo": 0.06262137795043253,
+        "hi": 0.27488392863442973
+      },
+      "a_level": 0.05,
+      "credit_level": 50.0,
+      "post_level": {
+        "mean": 0.15998092265001737,
+        "median": 0.15666021963304821,
+        "lo": 0.09143944051103234,
+        "hi": 0.24737840742951084
+      },
+      "a_omega": 0.197,
+      "credit_omega": 196.8,
+      "post_omega": {
+        "mean": 0.16591828304176545,
+        "median": 0.16456982416147634,
+        "lo": 0.11904200261784686,
+        "hi": 0.22045535660987806
+      },
+      "a_empirical": 1.0,
+      "credit_empirical": 1000.0,
+      "post_empirical": {
+        "mean": 0.16901128123812828,
+        "median": 0.16869392714735723,
+        "lo": 0.1450589386114491,
+        "hi": 0.19476699228985708
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+numpy>=1.24
+scipy>=1.11
+matplotlib>=3.7
+# The real-data runs also need Waymax and access to the Waymo Open Motion Dataset (see README):
+#   pip install git+https://github.com/waymo-research/waymax.git@main#egg=waymo-waymax
