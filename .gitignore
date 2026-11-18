@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/
+*.tfrecord*
+# per-vehicle values derived from the Waymo Open Motion Dataset are not redistributed
+results/womd_agents*.csv
